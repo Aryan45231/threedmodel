@@ -1,0 +1,27 @@
+.brandImage{
+    height: 40px;
+    width: 170px;
+}
+.AuthCardContainer{
+    width: 45vw;;
+    margin: 20px 0;
+    background-color: rgb(39, 35, 35);
+    border-radius: 10px;
+    border:  1px solid gray;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+}
+.BrandIMage{
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+   
+}
+@media(max-width:900px){
+    .AuthCardContainer{
+        width: 90vw;
+    }
+}

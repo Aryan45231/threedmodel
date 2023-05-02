@@ -1,0 +1,65 @@
+.ManualSigninCOntainer {
+    min-height: 360px;
+    padding-left: 5%;
+    width: 90%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: rgb(152, 142, 142);
+    justify-content: center;
+}
+
+.ManualSigninCOntainer input {
+    width: 90%;
+    margin-top: 5px;
+    min-width: 200px;
+    background-color: rgb(58, 53, 53);
+    border: none;
+    height: 35px;
+}
+
+.ManualSigninCOntainer button {
+    width: 90%;
+    margin-top: 30px;
+    height: 40px;
+    color: white;
+    ;
+    background-color: rgb(6, 129, 244);
+}
+
+.ManualSigninCOntainer h6 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.SigninWithOtherAccountContainer {
+    width: 90%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+}
+
+.SigninWithOtherAccountContainer * {
+    margin-top: 10px;
+    ;
+}
+.SigninWithOtherAccountContainer p {
+    margin-top: 40px;
+    color: rgb(124, 123, 123);
+}
+.inputContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputContainerLeftSide{
+    min-width: 200px;
+    flex: 1;
+}
+.InputCOntainerRightSide{
+    min-width: 200px;
+    flex: 1;
+}

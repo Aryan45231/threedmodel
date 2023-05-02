@@ -1,0 +1,208 @@
+.sideBarMainContainer {
+    display: flex;
+}
+
+.SidePart {
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(26, 24, 24);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.MainPart {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(36, 36, 37);
+    flex: 1;
+
+}
+.ContentPanel{
+    flex: 1;
+    overflow: auto;
+}
+
+
+.upperBarContainer {
+    height: 100px;
+    background-color: rgb(26, 24, 24);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BannerImage {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.BannerImage img {
+    height: 40px;
+    width: 160px;
+}
+
+.HeaderContainer h1 {
+    color: white;
+}
+.sidePartChildCOntainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sidePartChildCOntainer *{
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.SearchBar{
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.SearchBar input{
+    width: 70%;
+    border-radius: 20px;
+    background-color: rgb(60, 57, 57);
+    height: 40px;
+    border:1px solid rgb(68, 65, 65)
+}
+.SearchBar button{
+    cursor: pointer;
+    background-color: rgb(162, 26, 26);
+    border: none;
+    color: white;
+    font-size: 25px;
+    margin: 0 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.uploadPanelTransparentBackground{
+    width: 100vw;
+    background-color: rgba(48, 47, 47, 0.592);
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.UploadCard{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    min-height: 80vh;
+    background-color: rgb(88, 87, 87);
+}
+.UploadCard h1{
+    color:  white;
+    margin: 30px 0;
+}
+.ControlButtons{
+   margin: 20px 0;
+    display:  flex;
+    justify-content: flex-end;
+    bottom: 20px;
+    width: 100%;
+}
+.formInputs{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+}
+.formInputs h6{
+    margin: 20px 0;
+    width: 50vw;
+    min-width: 200px;
+    font-size: 20px;
+    color:white;;
+  
+}
+.formInputs input{
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(48, 44, 44);
+    min-width: 200px;
+    margin: 10px 0;
+    width: 50vw;;
+}
+
+
+.ControlButtons button{
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    height: 50px;
+    width:  120px;
+    transition: .2s linear all;
+   margin: 0 10px;
+}
+.upload{
+    background-color: rgb(162, 26, 26);;
+}
+.upload:hover{
+    background-color: rgb(126, 117, 117);;
+    border:  1px solid rgb(162, 26, 26);;
+}
+.cancel{
+    background-color: rgb(11, 0, 0);
+}
+.cancel:hover{
+    background-color: rgb(99, 97, 97);;
+    border: 1px solid black;
+}
+@media(max-width :900px) {
+    .sideBarMainContainer {
+        flex-direction: column;
+    }
+
+    .HeaderContainer h4 {
+        display: none;
+    }
+
+    .SidePart {
+        padding: 0 10px;
+        height: 80px;
+        width: 100vw;
+        flex-direction: row ;
+        align-items: center;
+    }
+    .upperBarContainer{
+        padding-top: 10px;;
+        height: 110px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .SearchBar {
+        margin-top: 10px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .SearchBar input{
+        width: 98%;
+    }
+    .UploadCard{
+        width: 90vw;;
+    }
+    .sidePartChildCOntainer{
+        display: none;
+    }
+    .ContentPanel{
+        overflow: scroll;
+    }
+}
